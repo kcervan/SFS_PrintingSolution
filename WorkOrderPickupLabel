@@ -1,0 +1,11 @@
+<apex:page standardController="WorkOrder" renderAs="pdf" showHeader="false" sidebar="false" applyHtmlTag="false">
+    <html>
+        <body style="width: 2in; height: 1in; margin: 0;">
+            <div style="font-size: 10pt; text-align: center;">
+                <b>Label</b><br/><br/>
+                <b>Receive or Name:</b> {!WorkOrder.Receive_or_name__c}<br/>
+                <b>Piece Count:</b> {!WorkOrder.Piece_Count__c}
+            </div>
+        </body>
+    </html>
+</apex:page>
