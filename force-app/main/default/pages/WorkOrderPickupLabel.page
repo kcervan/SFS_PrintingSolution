@@ -1,0 +1,13 @@
+<apex:page standardController="WorkOrder" showHeader="false" applyBodyTag="false" renderAs="pdf">
+    <head>
+        <style>
+            body { font: 12px; }
+            @page { margin: 0.05in; size: 2in 1.1in; }
+        </style> 
+    </head>
+    <body>
+        <p>Name: {!WorkOrder.Receive_or_name__c}</p>
+        <br></br>
+        <p>Count: {!WorkOrder.Piece_Count__c}</p>
+    </body>
+</apex:page>
